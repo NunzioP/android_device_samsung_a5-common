@@ -45,16 +45,10 @@ void init_target_properties(void)
 	/* get the bootloader string */
 	std::string bootloader = android::base::GetProperty("ro.bootloader", "");
 
-	if (bootloader.find("A5000") == 0) {
-		device = (char *)"a5ltechn";
-		model = (char *)"SM-A5000";
-		name = (char *)"a5ltechn";
-		network_type=LTE_DEVICE;
-	}
-	else if (bootloader.find("A5009") == 0) {
-		device = (char *)"a5ltectc";
-		model = (char *)"SM-A5009";
-		name = (char *)"a5ltectc";
+	if (bootloader.find("A500FU") == 0) {
+		device = (char *)"a5ultexx";
+		model = (char *)"SM-A500FU";
+		name = (char *)"a5ultexx";
 		network_type=LTE_DEVICE;
 	}
 	else {
