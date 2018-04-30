@@ -1,0 +1,2 @@
+# TFA98xx amplifier
+/dev/i2c-20                  u:object_r:amplifier_device:s0
